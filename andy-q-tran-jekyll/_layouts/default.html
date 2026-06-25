@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {% include mathjax.html %}
+  </head>
+
+  <body>
+    <div class="site-shell">
+      <aside class="sidebar">
+        <a class="site-name" href="{{ '/' | relative_url }}">andy q tran</a>
+
+        <nav aria-label="Primary navigation">
+          <a href="{{ '/' | relative_url }}"
+             {% if page.url == '/' %}aria-current="page"{% endif %}>me</a>
+          <a href="{{ '/research/' | relative_url }}"
+             {% if page.url == '/research/' %}aria-current="page"{% endif %}>research</a>
+        </nav>
+      </aside>
+
+      <main class="page">
+        <section class="page-copy">
+          {{ content }}
+        </section>
+
+        <aside class="image-space" aria-label="Image area">
+          {% if page.image %}
+            <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: '' }}">
+          {% else %}
+            <div class="image-placeholder">
+              <span>image</span>
+            </div>
+          {% endif %}
+        </aside>
+      </main>
+    </div>
+  </body>
+</html>

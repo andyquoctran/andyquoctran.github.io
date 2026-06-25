@@ -1,0 +1,11 @@
+title: andy q tran
+description: Personal website and research notes
+url: ""
+baseurl: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+
+permalink: pretty
