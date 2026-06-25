@@ -2,22 +2,18 @@
 layout: default
 title: me
 # To add a photo later, uncomment the next two lines and put the file in assets/images/
-# image: /assets/images/me.jpg
+image: /assets/images/me.png
 # image_alt: A photo of Andy Q. Tran
 ---
 
-# me
+# andy tran
 
-Write a short introduction here. This is the left-hand text area of your home page.
+I am an upcoming third year math student at Tufts University. My interest lie in tropical and non-archimedean geometry. My research this summer deals with Brill--Noether theory on tropical curves. 
 
-You can write normally in Markdown. For example, you can make **bold text**, add [a link](https://example.com), or make a list:
-
-- thing one
-- thing two
-- thing three
+In the fall I will be a course assistant for abstract algebra 1.
 
 ## contact
 
-Add your email, GitHub, CV, or anything else here.
+andy_q.tran[something here]tufts.edu
 
-<span class="muted">The box on the right is reserved for a picture. To replace it, follow the note at the top of this file.</span>
+
