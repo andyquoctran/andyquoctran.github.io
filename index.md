@@ -2,7 +2,7 @@
 layout: default
 title: me
 # To add a photo later, uncomment the next two lines and put the file in assets/images/
-image: /assets/images/me.png
+image: /assets/images/me.JPG
 # image_alt: A photo of Andy Q. Tran
 ---
 
