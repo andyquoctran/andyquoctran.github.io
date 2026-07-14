@@ -1,20 +1,18 @@
 ---
 layout: default
 title: research
-# To add a photo later, uncomment the next two lines and put the file in assets/images/
-image: /assets/images/clebsch.png
-# image_alt: A research-related image
+image: /assets/images/lofg.png
 ---
 
 # research
 
 ## tropical methods in brill--noether theory
 
-To a smooth projective curve $X$, of genus $g$, we studying its brill--noether locus of degree $d$ and rank $r$. Due to a result of Cools--Draisma--Payne--Robeva, we may do the same for tropical curves.
+In 2012, Cools--Draisma--Payne--Robeva proved a tropical analogue of the Brill--Noether theorem. Since then, tropical Brill--Noether theory has been a fruitful area of study. In fact, Nathan Pflueger gave us a full characterization of the behavor of these loci on chains of loops of generic lengths. 
 
-Chains of loops, chains of loops with bridges, and other graphs are very well studied from this point of view. Together with Montserrat Texidor i Bigas, we want to look at cylic chains of loops, and the divisor theory on these graphs.
+Our goal this summer is to see how this behavior changes when considering loops of loops. These things have been novelly explored, but only in low genus, specifically the $W^1_3$ case. 
 
-These graphs are formed from a chain of loops of genus $g$ with bridges, then gluing the start and end bridges. in the end we get an alternating cycle of $\frac{g}{2}$ loops and $\frac{g}{2}$ bridges. Also, the graph becomes genus $g+1$. 
+It would be nice to have a more complete characterization. 
 
 ## notes and links
 
