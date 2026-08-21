@@ -6,9 +6,10 @@ image: /assets/images/me.JPG
 
 # andy tran
 
-I am a rising junior at Tufts University. My interest lie in tropical and algebraic geometry. My research this summer deals with Brill--Noether theory on tropical curves. 
+I am a junior at Tufts University. My interest lie in tropical and algebraic geometry. 
+I am the course assistant for Abstract Algebra 1. 
 
-In the fall I will be a course assistant for abstract algebra 1.
+My research this past summer dealt with the Brill-Noether theory of the loop of loops metric graph. 
 
 ## contact
 

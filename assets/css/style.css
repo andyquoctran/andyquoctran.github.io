@@ -135,9 +135,37 @@ nav a[aria-current="page"] {
   color: var(--muted);
 }
 
+.content-image {
+  width: 75%;
+  margin: 28px auto;
+}
+
+.content-image.latex-figure {
+  width: 55%;
+}
+
+.content-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+.content-image figcaption {
+  margin-top: 9px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
 .image-space {
   width: 100%;
   padding-top: 3px;
+}
+
+.image-figure {
+  margin: 0;
 }
 
 .image-space img,
@@ -150,6 +178,14 @@ nav a[aria-current="page"] {
 .image-space img {
   display: block;
   border-radius: 2px;
+}
+
+.image-figure figcaption {
+  margin-top: 9px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  text-align: center;
 }
 
 .image-placeholder {

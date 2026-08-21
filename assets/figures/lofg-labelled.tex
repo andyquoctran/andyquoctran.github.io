@@ -1,0 +1,48 @@
+\documentclass[tikz,border=8pt]{standalone}
+
+\usepackage{tikz}
+
+\definecolor{pagebg}{HTML}{121212}
+\definecolor{pageink}{HTML}{E7E7E7}
+\definecolor{inkblue}{HTML}{79B8F3}
+\definecolor{edgeblue}{HTML}{79B8F3}
+\definecolor{edgegold}{HTML}{D9A441}
+
+\begin{document}
+\begin{tikzpicture}[
+  scale=1.02,
+  every node/.style={font=\small,text=pageink},
+  vertex/.style={circle,fill=inkblue,inner sep=2.1pt},
+  bedge/.style={draw=edgeblue,line width=1.5pt},
+  aedge/.style={draw=edgegold,line width=1.0pt},
+  edge label/.style={fill=pagebg,inner sep=1pt}
+]
+  \node[vertex,label=above:$v_1$] (v1) at (90:3.15) {};
+  \node[vertex,label=above right:$w_1$] (w1) at (54:3.15) {};
+  \node[vertex,label=right:$v_2$] (v2) at (18:3.15) {};
+  \node[vertex,label=right:$w_2$] (w2) at (-18:3.15) {};
+  \node[vertex,label=below right:$v_3$] (v3) at (-54:3.15) {};
+  \node[vertex,label=below:$w_3$] (w3) at (-90:3.15) {};
+  \node[vertex,label=below left:$v_4$] (v4) at (-126:3.15) {};
+  \node[vertex,label=left:$w_4$] (w4) at (-162:3.15) {};
+  \node[vertex,label=left:$v_5$] (v5) at (162:3.15) {};
+  \node[vertex,label=above left:$w_5$] (w5) at (126:3.15) {};
+
+  \draw[bedge] (w1)--node[edge label]{$\scriptstyle b_1$}(v1);
+  \draw[bedge] (w2)--node[edge label]{$\scriptstyle b_2$}(v2);
+  \draw[bedge] (w3)--node[edge label]{$\scriptstyle b_3$}(v3);
+  \draw[bedge] (w4)--node[edge label]{$\scriptstyle b_4$}(v4);
+  \draw[bedge] (w5)--node[edge label]{$\scriptstyle b_5$}(v5);
+
+  \draw[aedge] (v2) to[bend left=18] node[edge label]{$\scriptstyle a_2$} (w1);
+  \draw[aedge] (v2) to[bend right=18] node[edge label]{$\scriptstyle a_2'$} (w1);
+  \draw[aedge] (v3) to[bend left=18] node[edge label]{$\scriptstyle a_3$} (w2);
+  \draw[aedge] (v3) to[bend right=18] node[edge label]{$\scriptstyle a_3'$} (w2);
+  \draw[aedge] (v4) to[bend left=18] node[edge label]{$\scriptstyle a_4$} (w3);
+  \draw[aedge] (v4) to[bend right=18] node[edge label]{$\scriptstyle a_4'$} (w3);
+  \draw[aedge] (v5) to[bend left=18] node[edge label]{$\scriptstyle a_5$} (w4);
+  \draw[aedge] (v5) to[bend right=18] node[edge label]{$\scriptstyle a_5'$} (w4);
+  \draw[aedge] (v1) to[bend left=18] node[edge label]{$\scriptstyle a_1$} (w5);
+  \draw[aedge] (v1) to[bend right=18] node[edge label]{$\scriptstyle a_1'$} (w5);
+\end{tikzpicture}
+\end{document}
