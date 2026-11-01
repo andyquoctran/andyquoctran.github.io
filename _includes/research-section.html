@@ -1,0 +1,18 @@
+{% assign section_id = include.title | slugify %}
+{% assign section_body = include.body | strip %}
+<section class="research-section" aria-labelledby="{{ section_id }}">
+  <h2 id="{{ section_id }}">{{ include.title | escape }}</h2>
+  {% if section_body != '' %}
+    <div class="research-section-copy muted">
+      {{ include.body | markdownify }}
+    </div>
+  {% endif %}
+  {% if include.image %}
+    <figure class="image-figure research-section-figure">
+      <img src="{{ include.image | relative_url }}" alt="{{ include.image_alt | default: '' | escape }}">
+      {% if include.image_caption %}
+        <figcaption>{{ include.image_caption }}</figcaption>
+      {% endif %}
+    </figure>
+  {% endif %}
+</section>

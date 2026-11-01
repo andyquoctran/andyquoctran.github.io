@@ -20,28 +20,26 @@
              {% if page.url == '/' %}aria-current="page"{% endif %}>me</a>
           <a href="{{ '/research/' | relative_url }}"
              {% if page.url == '/research/' %}aria-current="page"{% endif %}>research</a>
+          <a href="{{ '/misc/' | relative_url }}"
+             {% if page.url == '/misc/' %}aria-current="page"{% endif %}>misc</a>
         </nav>
       </aside>
 
-      <main class="page">
+      <main data-page="{{ page.url | escape }}" class="page{% unless page.image %} page--text-only{% endunless %}{% if page.section_figures %} page--section-figures{% endif %}">
         <section class="page-copy">
           {{ content }}
         </section>
 
-        <aside class="image-space" aria-label="Image area">
-          {% if page.image %}
-            <figure class="image-figure">
+        {% if page.image %}
+          <aside class="image-space" aria-label="Image area">
+            <figure class="image-figure{% if page.image_type == 'diagram' %} image-figure--diagram{% endif %}">
               <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: '' }}">
               {% if page.image_caption %}
                 <figcaption>{{ page.image_caption }}</figcaption>
               {% endif %}
             </figure>
-          {% else %}
-            <div class="image-placeholder">
-              <span>image</span>
-            </div>
-          {% endif %}
-        </aside>
+          </aside>
+        {% endif %}
       </main>
     </div>
   </body>
